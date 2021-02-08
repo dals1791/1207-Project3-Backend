@@ -26,6 +26,7 @@ app.get("/", (req, res) => {
 
  // --- IMPORT THE CONTROLLERs ---
  const userRouter = require('./controllers/userRoutes.js')
+
 app.use('/users', userRouter)
 
 const budgetRouter = require('./controllers/budgetRoutes.js')
@@ -33,6 +34,7 @@ app.use('/budgets', budgetRouter)
 
 const transactRouter = require('./controllers/transactRoutes.js')
 app.use('/transactions', transactRouter)
+
 
 
 //The PORT is a variable that Heroku is tryna pass in. Use this variable to set up server

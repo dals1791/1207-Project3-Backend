@@ -11,6 +11,7 @@ const db = mongoose.connection
 
 
 // ==========  DISPLAYS ALL  =========
+
 router.get('/', async (req, res) => {
     res.json(await User.find({}).populate("budget").populate("transactions"))
 })

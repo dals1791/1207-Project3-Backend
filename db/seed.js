@@ -9,6 +9,7 @@ const emptyBudget = {
 };
 
 const sampleUser = {
+
   firstName: "Ash",
   lastName: "Kechum",
   email: "ashket@pokecenter.com",

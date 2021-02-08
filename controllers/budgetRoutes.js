@@ -5,13 +5,16 @@ const mongoose = require('../db/connection')
 
 // IMPORT THE MODELs COOKBOOK AND AUTHOR
 const Budget = require('../models/budgetMD')
+
 const User = require('../models/userMD')
+
 
 // CONNECT TO THE DB
 const db = mongoose.connection
 
 
 // ==========  DISPLAYS ALL  =========
+
 router.get('/', async (req, res) => {
    res.json(await Budget.find({}))
 })
