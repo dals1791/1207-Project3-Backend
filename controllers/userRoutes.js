@@ -41,9 +41,17 @@ router.post('/', (req,res)=>{
 })
 
 // ==========  UPDATE 1  BY ID =========
-
+router.put('/:userId', async (req, res)=>{
+    res.json(
+        await User.findByIdAndUpdate(req.params.userId, req.body, {new: true})
+    )
+})
 
   // ==========  DELETE 1  BY ID =========
-
+  router.delete('/:userId', async (req, res)=>{
+    res.json(
+        await User.findByIdAndRemove(req.params.userId)
+    )
+})
 
 module.exports = router
