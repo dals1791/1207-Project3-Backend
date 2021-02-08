@@ -9,7 +9,6 @@ const emptyBudget = {
 };
 
 const sampleUser = {
-
   firstName: "Ash",
   lastName: "Kechum",
   email: "ashket@pokecenter.com",
@@ -21,7 +20,6 @@ const emptyTransaction = {
   description: "enter descr",
   category: "enter category",
   amount: 0,
-  time: new Date(),
   isRoutine: false,
   isExpense: false,
 };
