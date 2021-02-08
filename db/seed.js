@@ -9,9 +9,10 @@ const emptyBudget = {
 };
 
 const sampleUser = {
-  firstname: "Ash",
-  lastname: "Kechum",
+  firstName: "Ash",
+  lastName: "Kechum",
   email: "ashket@pokecenter.com",
+  userName: "pokeMaster45",
   password: "pikachu45",
 };
 
