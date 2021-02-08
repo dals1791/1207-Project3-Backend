@@ -3,7 +3,7 @@ const router = express.Router()
 // IMPORT mongoose
 const mongoose = require('../db/connection')
 
-// IMPORT THE MODELs COOKBOOK AND AUTHOR
+// IMPORT THE MODELs
 const Transactions = require('../models/transactionsMD')
 const User = require('../models/userMD')
 

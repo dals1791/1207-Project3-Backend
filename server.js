@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
 app.use('/users/', userRouter)
 
 const budgetRouter = require('./controllers/budgetRoutes.js')
-app.use('/budget/', budgetRouter)
+app.use('/budgets/', budgetRouter)
 
 const transactRouter = require('./controllers/transactRoutes.js')
 app.use('/transactions/', transactRouter)
