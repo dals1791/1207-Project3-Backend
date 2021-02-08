@@ -7,7 +7,7 @@ require("dotenv").config();
 /////////////////////////////////////
 // MONGOOSE CONNECTION
 /////////////////////////////////////
-const  MONGODBURI = "mongodb://localhost:27017/" + "budgetapi"
+const  {MONGODBURI} = process.env
 const mongoose = require("mongoose");
 const config = { useUnifiedTopology: true, useNewUrlParser: true };
 const DB = mongoose.connection;
