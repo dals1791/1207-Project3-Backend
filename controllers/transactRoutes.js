@@ -39,9 +39,9 @@ router.put('/:transId', async (req, res)=>{
     )
 })
   // ==========  DELETE 1  BY ID =========
-  router.put('/:transId', async (req, res)=>{
+  router.delete('/:transId', async (req, res)=>{
     res.json(
-        await Transactions.findByIdAndUpdate(req.params.transId, req.body, {new: true})
+        await Transactions.findByIdAndRemove(req.params.transId)
     )
 })
 
