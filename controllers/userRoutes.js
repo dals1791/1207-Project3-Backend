@@ -11,21 +11,32 @@ const db = mongoose.connection
 
 
 // ==========  DISPLAYS ALL  =========
-router.get('/', (req, res) => {
-    User.find({}).populate("budget").populate("transactions").then(allUsers => {
-        res.json(allUsers)
-    }).catch(err => res.json({
-        status: 400,
-        err: err
-    }))
+
+router.get('/', async (req, res) => {
+    res.json(await User.find({}).populate("budget").populate("transactions"))
+})
+//==========  SHOW 1 USER  =========
+router.get('/:userId', async (req, res) => {
+    res.json(await User.findById(req.params.userId).populate("budget").populate("transactions"))
 })
 
 // ==========  CREATE 1  =========
-
+router.post('/', async (req,res)=>{
+    res.json(await User.create(req.body))
+})
 
 // ==========  UPDATE 1  BY ID =========
+router.put('/:userId', async (req, res)=>{
+    res.json(
+        await User.findByIdAndUpdate(req.params.userId, req.body, {new: true})
+    )
+})
 
   // ==========  DELETE 1  BY ID =========
-
+  router.delete('/:userId', async (req, res)=>{
+    res.json(
+        await User.findByIdAndRemove(req.params.userId)
+    )
+})
 
 module.exports = router
