@@ -3,6 +3,7 @@ const router = express.Router()
 // IMPORT mongoose
 const mongoose = require('../db/connection')
 
+
 // IMPORT THE MODELs
 const Transactions = require('../models/transactionsMD')
 const User = require('../models/userMD')
@@ -12,6 +13,7 @@ const db = mongoose.connection
 
 
 // ==========  DISPLAYS ALL  =========
+
 router.get('/', async (req, res) => {
    res.json(await Transactions.find({}))
 })
@@ -24,8 +26,6 @@ router.post('/:userId', async (req, res)=>{
     user.save()
     res.json(user.populate("transactions"))     
 })
-
-
 
 // ==========  UPDATE 1  BY ID =========
 router.put('/:transId', async (req, res)=>{

@@ -85,10 +85,10 @@ Here are the official wireframes for our budget application. The first two links
 
 - [WireFrame - Mobile](https://www.figma.com/file/DfRQa0bx3jLrD2q41igogW/BUDGTPAD-WireFrame-Mobile-name-is-not-final?node-id=4%3A2)
 - [WireFrame - Tablet](https://www.figma.com/file/TRBwOlsBBOdenVc0IDT9Yb/BUGTPAD-Wireframe-Tablet?node-id=0%3A1)
-- [WireFrame - Desktop](https://www.figma.com/file/njd9KOGH3tyByGZcg606vH/BUDGTPAD-WireFrame-Desktop?node-id=0%3A1)
+- [WireFrame New - Desktop](https://docs.google.com/document/d/1PKqwOpkEN4kmuYWBzYHNh9vvvHYPIn1h-svJohJCjts/edit?usp=sharing)
 - [Front-End Architecture](https://docs.google.com/document/d/1cihabkw6SrNlEe_E8MJKUVV-zLnOUvzDcJDbjgFdojk/edit?usp=sharing)
 - [Back-End Architecture](https://docs.google.com/spreadsheets/d/1XECmUmoJZeuVNIFufisZjdueglj_SYs-7OsxV74k5nQ/edit#gid=0)
-
+- [WireFrame Old - Desktop](https://www.figma.com/file/njd9KOGH3tyByGZcg606vH/BUDGTPAD-WireFrame-Desktop?node-id=0%3A1)
 
 ### Technical Requirements - Two Separate Repos
 
