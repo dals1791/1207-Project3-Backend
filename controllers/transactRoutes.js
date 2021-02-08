@@ -12,13 +12,8 @@ const db = mongoose.connection
 
 
 // ==========  DISPLAYS ALL  =========
-router.get('/', (req, res) => {
-    Transactions.find({}).then(tansactions => {
-        res.json(tansactions)
-    }).catch(err => res.json({
-        status: 400,
-        err: err
-    }))
+router.get('/', async (req, res) => {
+   res.json(await Transactions.find({}))
 })
 
 // ==========  CREATE 1  =========
