@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
 
  // --- IMPORT THE CONTROLLERs ---
  const userRouter = require('./controllers/userRoutes.js')
-app.use('/user/', userRouter)
+app.use('/users/', userRouter)
 
 const budgetRouter = require('./controllers/budgetRoutes.js')
 app.use('/budget/', budgetRouter)
