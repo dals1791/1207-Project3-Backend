@@ -84,7 +84,7 @@ Transactions: {
 Here are the official wireframes for our budget application. The first two links are the Figma wireframes for both mobile and desktop applications. Our architecture for our React front-end, and Express back-end are attached as well.
 
 - [WireFrame - Mobile](https://docs.google.com/document/d/1glughpSoq7I-NIqLjwgEPSnPbSYjBjuC33WT89B_-kE/edit?usp=sharing)
-- [WireFrame - Tablet](https://www.figma.com/file/TRBwOlsBBOdenVc0IDT9Yb/BUGTPAD-Wireframe-Tablet?node-id=0%3A1)
+- [WireFrame - Tablet](https://docs.google.com/document/d/1jB3KgJzzs1_UQPWdJFbpIO4P1w9XEI5X4oYOltzaJMs/edit?usp=sharing)
 - [WireFrame - Desktop](https://docs.google.com/document/d/1PKqwOpkEN4kmuYWBzYHNh9vvvHYPIn1h-svJohJCjts/edit?usp=sharing)
 - [Front-End Architecture](https://docs.google.com/document/d/1cihabkw6SrNlEe_E8MJKUVV-zLnOUvzDcJDbjgFdojk/edit?usp=sharing)
 - [Back-End Architecture](https://docs.google.com/spreadsheets/d/1XECmUmoJZeuVNIFufisZjdueglj_SYs-7OsxV74k5nQ/edit#gid=0)
