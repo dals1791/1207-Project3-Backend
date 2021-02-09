@@ -17,7 +17,7 @@ router.get('/', async (req, res) => {
 })
 //==========  SHOW 1 USER  =========
 router.get('/:un/:pw', async (req, res) => {
-    const users = await User.find({})
+    const users = await User.find({}).populate('budget').populate('transactions')
     const itemFound = users.filter((user)=>{ 
         return (user.userName===req.params.un &&user.password===req.params.pw)
     })
