@@ -16,8 +16,12 @@ router.get('/', async (req, res) => {
     res.json(await User.find({}).populate("budget").populate("transactions"))
 })
 //==========  SHOW 1 USER  =========
-router.get('/:userId', async (req, res) => {
-    res.json(await User.findById(req.params.userId).populate("budget").populate("transactions"))
+router.get('/:un/:pw', async (req, res) => {
+    const users = await User.find({})
+    const itemFound = users.filter((user)=>{ 
+        return (user.userName===req.params.un &&user.password===req.params.pw)
+    })
+    res.json(itemFound)
 })
 
 // ==========  CREATE 1  =========
