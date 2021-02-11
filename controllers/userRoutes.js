@@ -23,6 +23,9 @@ router.get('/:un/:pw', async (req, res) => {
     })
     res.json(itemFound)
 })
+router.get('/:id', async (req, res) => {
+    res.json(await User.findById(req.params.id).populate("budget").populate("transactions"))
+})
 
 // ==========  CREATE 1  =========
 router.post('/', async (req,res)=>{
