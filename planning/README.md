@@ -1,10 +1,10 @@
-# Project 3 - MERN - BUDGTPAD (name is not final)!
+# Project 3 - MERN - BUDGTPAD!
 
 ## Project Links
 
 - [Frontend Repo Link](https://github.com/dals1791/1207-Project3-Frontend)
 - [Backend Repo Link](https://github.com/dals1791/1207-Project3-Backend)
-- [Netlify Link](https://elated-galileo-c1aa74.netlify.app/)
+- [Netlify Link](https://budgtpad.netlify.app)
 - [Heroku Link](https://project3-backend-1207.herokuapp.com/)
 
 ## Project Description
@@ -21,12 +21,13 @@ Tnis application will of course be built mobile first, followed by tablet and th
 | Front-End Architecture Planning  | Complete | 
 | Back-End Architecture Planning | Complete | 
 | Initializing React/Express for basic set-up use | Complete |
-| Primary assembly of Express API Server | Pending |
-| Primary assembly of React front-end application | Pending |
-| Setting useState and useEffect hooks | Pending |
-| Calling API to React application | Pending |
+| Primary assembly of Express API Server | Complete |
+| Primary assembly of React front-end application | Complete |
+| Setting useState and useEffect hooks | Complete |
+| Calling API to React application | Complete |
 | Testing of bare-bone application for functionality | Pending |
-| CSS Styling | Pending |
+| CSS Styling | Complete - Post-MVP Styling in progress |
+
 
 ## API
 
@@ -85,10 +86,10 @@ Here are the official wireframes for our budget application. The first two links
 
 - [WireFrame - Mobile](https://www.figma.com/file/DfRQa0bx3jLrD2q41igogW/BUDGTPAD-WireFrame-Mobile-name-is-not-final?node-id=4%3A2)
 - [WireFrame - Tablet](https://www.figma.com/file/TRBwOlsBBOdenVc0IDT9Yb/BUGTPAD-Wireframe-Tablet?node-id=0%3A1)
-- [WireFrame New - Desktop](https://docs.google.com/document/d/1PKqwOpkEN4kmuYWBzYHNh9vvvHYPIn1h-svJohJCjts/edit?usp=sharing)
+- [WireFrame - Desktop](https://www.figma.com/file/njd9KOGH3tyByGZcg606vH/BUDGTPAD-WireFrame-Desktop?node-id=0%3A1)
 - [Front-End Architecture](https://docs.google.com/document/d/1cihabkw6SrNlEe_E8MJKUVV-zLnOUvzDcJDbjgFdojk/edit?usp=sharing)
 - [Back-End Architecture](https://docs.google.com/spreadsheets/d/1XECmUmoJZeuVNIFufisZjdueglj_SYs-7OsxV74k5nQ/edit#gid=0)
-- [WireFrame Old - Desktop](https://www.figma.com/file/njd9KOGH3tyByGZcg606vH/BUDGTPAD-WireFrame-Desktop?node-id=0%3A1)
+
 
 ### Technical Requirements - Two Separate Repos
 
@@ -161,37 +162,44 @@ Initial components decided for Project.
 | Pie Chart | Visual diagram of user income and expenses. |
 | Add Transaction | Allows users to log transaction based on category, description, cost, date and time. |
 | Add Income/Goal | Adding user income and goals of spending habits.       |
+| NavBar | Navigation Bar for the app. |
+| Category Drop Menu | Drop-down menu for categories. |
+| Landing | Component rendered on landing page. |
+| Summary | Summarizes all transactions. |
+| Topbar | Landing page top bar. |
+| Update Transaction | Allows user to update transactions. |
 
 ## MVP Time-Frames
 
 | Task | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Create database/seed data | H | 6 hrs | *hrs* | *hrs* |
-| Create routes/test | H | 8 hrs | *hrs* | *hrs* |
-| Create React Skeleton React Components | H | 5 hrs | *hrs* | *hrs* |
-| React Routes/Paths linking to components | H | 1 hr | *hrs* |
-| API fetch to grab data in React | H| 1 hr | *hrs* | *hrs* |
-| Login page - check user Input | H|4 hrs | *hrs*  | *hrs* |
-| Landing page - Render pie chart and income data | H | 8 hrs | *hrs* |
-| Transactions page - Render transactions data | H| 4 hrs| *hrs* | *hrs* |
-| Transactions Form component - add new transaction and display it on Transactions page | H| 3 hrs| *hrs* | *hrs* |
-| User Info page - render data | H| 3 hrs| *hrs* | *hrs* |
-| User Info Form Component - Edit user info: name, email, password, income | H|3 hrs | *hrs* | *hrs* |
-| Teams page | H|2 hrs | *hrs* | *hrs* |
-| Mobile Layout | M | 15 hrs | *hrs* | *hrs* |
-| Tablet Layout | M | 15 hrs | *hrs* | *hrs* |
-| Desktop Layout | M | 15 hrs | *hrs* | *hrs* |
-| Total Time | H |  93 hrs | *hrs* | *hrs* |
+| Create database/seed data | H | 6 hrs | 8 hrs | 8 hrs |
+| Create routes/test | H | 8 hrs | 9 hrs | 9 hrs |
+| Create React Skeleton React Components | H | 5 hrs | 8 hrs | 8 hrs |
+| React Routes/Paths linking to components | H | 1 hr | 1 hr | 1 hr |
+| API fetch to grab data in React | H| 1 hr | 2 hrs | 2 hrs |
+| Login page - check user Input | H | 4 hrs | 8 hrs  | 8hrs |
+| Landing page - Render pie chart and income data | H | 8 hrs | 12 hrs | 12 hrs |
+| Transactions page - Render transactions data | H| 4 hrs| 6 hrs | 6 hrs |
+| Transactions Form component - add new transaction and display it on Transactions page | H| 3 hrs| 5 hrs | 5 hrs |
+| User Info page - render data | H| 3 hrs| 8 hrs | 8 hrs |
+| User Info Form Component - Edit user info: name, email, password, income | H | 3 hrs | 10 hrs | 10 hrs |
+| Teams page | H | 2 hrs | 8 hrs | 8hrs |
+| Mobile Layout | M | 15 hrs | 20 hrs | 20 hrs |
+| Tablet Layout | M | 15 hrs | 25 hrs | 20 hrs |
+| Desktop Layout | M | 15 hrs | 25 hrs | 25 hrs |
+| Total Time | H |  93 hrs | 146 hrs | 146 hrs |
+
 
 ## Post MVP Time-Frames
 | Task | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| User authentication | H | 10 hrs | *hrs* | *hrs* |
-| Sorting transactions (monthly, daily, yearly) | M | 6 hrs | *hrs* | *hrs* |
-| Edit a transaction based on clicking the transaction versus clicking a button.  | MH | 10 hrs | *hrs* | *hrs* |
-| Settings page for users to configure light and dark mode. | L | 6 hrs | *hrs* | *hrs* |
-| Historical trending, analysis, comparisons of spending data. (daily, monthly, yearly) | L | 20 hrs | *hrs* | *hrs* |
-| Total Time | H |  52 hrs | *hrs* | *hrs* |
+| User authentication | H | 10 hrs | 0 hrs | 0 hrs |
+| Sorting transactions (monthly, daily, yearly) | M | 6 hrs | 0 hrs | 0 hrs |
+| Edit a transaction based on clicking the transaction versus clicking a button.  | MH | 10 hrs | 0 hrs | 0 hrs |
+| Settings page for users to configure light and dark mode. | L | 6 hrs | 0 hrs | 0 hrs |
+| Historical trending, analysis, comparisons of spending data. (daily, monthly, yearly) | L | 20 hrs | 0 hrs| 0 hrs |
+| Total Time | H |  52 hrs | 0 hrs | 0 hrs |
 
 
 ## Additional Libraries
@@ -210,19 +218,20 @@ Our team will probably use the following libraries and frameworks:
 Official tasks assigned to each team member. Collaboration will be done on Trello.
 
 **Sean:**
-- Working on the database. 
-- Handling mostly back-end but will stand-by for front-end when neccesary.
+- Set-up the Express server and configured schema/models.
+- Back-End Developer, received assistance from Anny.
 - Creating planning directory and architecture.
+- Linked API to React app.
 
 **Anny:**
-- Handling piechart diagrams.
-- Seeding data.
-- Helping out with routes, back-end and front-end. 
+- Assisted Sean and Steve with both back-end and front-end.
+- Created state and other hooks for React Application.
+- Helping out with routes, back-end and front-end.
+- Troubleshooted the bugs we had during development.
 
 **Steven:**
-- Handling visualization of the final product. Created wireframes for the project.
-- CSS Styling when everything is up and running.
-- Create basic component layout and render to React. 
-- Update the readme file and provide updates on the team.
-- Handling front-end look and components, will receive assistance when neccesary.
+- Planning of the application, project worksheet, wireframes. 
+- Front-end Designer - received assistance from Anny and Sean.
+- Set-up React server, boilerplates and basic configuration of components.
+- Updated project worksheet with times and updates.
 
