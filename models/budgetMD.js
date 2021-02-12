@@ -4,7 +4,7 @@ const mongoose = require('../db/connection')
 const Schema = mongoose.Schema
 
 const budgetSchema = new Schema ({
-    income: {type: Number, required: true},
+    income: {type: Number, default: 0, required: true},
     spendGoal: {type: Number, required: false},
     spendCategory: {type: String, required: false}
 })
